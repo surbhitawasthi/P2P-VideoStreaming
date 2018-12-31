@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane fx:id="rootAnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="684.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane fx:id="leftAnchorPane" layoutY="128.0" prefHeight="556.0" prefWidth="213.0" style="-fx-background-color: #0f0f0f;" />
+      <AnchorPane fx:id="topAnchorPane" prefHeight="128.0" prefWidth="1100.0" style="-fx-background-color: #3a5a8a;">
+         <children>
+            <JFXButton fx:id="btn" buttonType="RAISED" layoutX="528.0" layoutY="51.0" ripplerFill="#cd1818" style="-fx-background-color: #ff0000;" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="contentAnchorPane" layoutX="213.0" layoutY="128.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="556.0" prefWidth="887.0" />
+   </children>
+</AnchorPane>

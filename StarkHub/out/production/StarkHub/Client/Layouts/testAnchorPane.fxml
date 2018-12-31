@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="156.0" prefWidth="221.0" style="-fx-background-radius: 10; -fx-border-color: #693bf1; -fx-border-radius: 10;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <effect>
+      <DropShadow />
+   </effect>
+   <children>
+      <ImageView fitHeight="105.0" fitWidth="200.0" layoutX="11.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true" />
+      <JFXTextField alignment="CENTER" editable="false" labelFloat="true" layoutX="11.0" layoutY="116.0" prefHeight="26.0" prefWidth="200.0" promptText="Hello">
+         <effect>
+            <Glow />
+         </effect>
+      </JFXTextField>
+   </children>
+</AnchorPane>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane opacity="0.85" prefHeight="178.0" prefWidth="237.0" style="-fx-border-radius: 15;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fx:id="thumbnailView" fitHeight="181.0" fitWidth="260.0" pickOnBounds="true" />
+      <JFXButton buttonType="RAISED" layoutX="2.0" layoutY="3.0" prefHeight="181.0" prefWidth="260.0" ripplerFill="WHITE" text=" " textFill="WHITE">
+         <effect>
+            <Shadow />
+         </effect>
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+   </children>
+   <effect>
+      <Bloom />
+   </effect>
+   <cursor>
+      <Cursor fx:constant="OPEN_HAND" />
+   </cursor>
+</AnchorPane>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="132.0" prefWidth="777.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" >
+   <children>
+      <Label layoutX="14.0" layoutY="14.0" prefHeight="48.0" prefWidth="532.0" text="Channel Name" textFill="#b22c2c">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Label>
+      <Label layoutX="32.0" layoutY="72.0" prefHeight="24.0" prefWidth="188.0" text="Likes: " />
+      <Label layoutX="32.0" layoutY="102.0" prefHeight="16.0" prefWidth="188.0" text="Comments: " />
+      <Label layoutX="417.0" layoutY="76.0" prefHeight="16.0" prefWidth="204.0" text="Subscribers: " />
+      <Label layoutX="417.0" layoutY="102.0" prefHeight="16.0" prefWidth="204.0" text="Views:" />
+      <Label layoutX="712.0" layoutY="14.0" prefHeight="36.0" prefWidth="51.0" text="8.5" textFill="#bc1313">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

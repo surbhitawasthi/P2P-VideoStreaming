@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXSlider?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.media.MediaView?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="mainMediaAnchorPane" prefHeight="700.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.UI.MediaPlayerAndControlsController">
+   <children>
+      <AnchorPane fx:id="mediaViewAnchorPane" layoutX="6.0" layoutY="7.0" maxHeight="597.0" maxWidth="1270.0" minHeight="597.0" minWidth="1270.0" prefHeight="597.0" prefWidth="1270.0">
+         <children>
+            <MediaView fx:id="mediaView" fitHeight="580.0" fitWidth="1250.0" />
+            <AnchorPane fx:id="controlAnchorPane" layoutX="5.0" layoutY="496.0" prefHeight="97.0" prefWidth="1258.0">
+               <children>
+                  <JFXSlider fx:id="videoSlider" layoutX="14.0" layoutY="9.0" prefHeight="16.0" prefWidth="1236.0">
+                     <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                     </cursor>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </JFXSlider>
+                  <JFXButton fx:id="playPauseButton" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="611.0" layoutY="38.0" prefHeight="52.0" prefWidth="49.0" style="-fx-background-color: #c90a34; -fx-background-radius: 50; -fx-border-radius: 50;" textFill="WHITE">
+                     <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                     </cursor>
+                  </JFXButton>
+                  <JFXButton fx:id="previousButton" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="516.0" layoutY="51.0" onAction="#previousButtonClicked" prefHeight="26.0" prefWidth="72.0" style="-fx-background-color: #c90a34;" textFill="WHITE">
+                     <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                     </cursor>
+                  </JFXButton>
+                  <JFXButton fx:id="forwardButton" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="687.0" layoutY="51.0" onAction="#forwardButtonClicked" prefHeight="26.0" prefWidth="72.0" style="-fx-background-color: #c90a34;" textFill="WHITE">
+                     <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                     </cursor>
+                  </JFXButton>
+                  <JFXSlider fx:id="volumeSlider" layoutX="927.0" layoutY="56.0">
+                     <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                     </cursor>
+                  </JFXSlider>
+                  <Label layoutX="14.0" layoutY="30.0" prefHeight="16.0" prefWidth="72.0" text="00:00" />
+                  <Label contentDisplay="RIGHT" layoutX="1182.0" layoutY="30.0" prefHeight="16.0" prefWidth="62.0" text="00:00" textAlignment="RIGHT" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <Label fx:id="videoNameLabel" layoutX="14.0" layoutY="607.0" prefHeight="40.0" prefWidth="614.0" text="Name of Video">
+         <font>
+            <Font size="19.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+      <JFXButton fx:id="subscribeButton" buttonType="RAISED" layoutX="1056.0" layoutY="614.0" onAction="#subscribe" prefHeight="40.0" prefWidth="210.0" style="-fx-background-color: #c90a34;" text="Subscribe" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <Label fx:id="channelNameLabel" layoutX="11.0" layoutY="654.0" prefHeight="21.0" prefWidth="274.0" text="Channel Name" textFill="#756d6d">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="likeButton" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="875.0" layoutY="614.0" onAction="#increaseLikes" prefHeight="40.0" prefWidth="49.0" ripplerFill="#c90a34" style="-fx-border-color: #c90a34; -fx-background-radius: 30; -fx-border-radius: 30;" text=" " />
+      <JFXButton fx:id="dislikeButton" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="942.0" layoutY="614.0" onAction="#decreaseLikes" prefHeight="40.0" prefWidth="49.0" ripplerFill="#c90a34" style="-fx-border-color: #c90a34; -fx-background-radius: 30; -fx-border-radius: 30;" text=" " />
+      <Label fx:id="likesLabel" layoutX="875.0" layoutY="661.0" prefHeight="16.0" prefWidth="119.0" text="Likes: 3128" />
+   </children>
+</AnchorPane>

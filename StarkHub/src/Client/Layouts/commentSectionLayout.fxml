@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="commentSectionAnchorPane" prefHeight="199.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.UI.CommentSectionController">
+   <children>
+      <JFXButton fx:id="commentButton" buttonType="RAISED" layoutX="1149.0" layoutY="78.0" onAction="#commentButtonClicked" prefHeight="26.0" prefWidth="100.0" style="-fx-background-color: #c90a34;" text="Comment" textFill="WHITE" />
+      <JFXTextArea fx:id="commentTextArea" focusColor="#e2d5d5" layoutX="9.0" layoutY="9.0" prefHeight="53.0" prefWidth="1255.0" promptText="Add a commnent" />
+      <JFXButton fx:id="cancelButton" buttonType="RAISED" layoutX="1038.0" layoutY="78.0" onAction="#cancelButtonClicked" prefHeight="26.0" prefWidth="82.0" style="-fx-background-color: #e2d5d5;" text="Cancel" />
+   </children>
+</AnchorPane>

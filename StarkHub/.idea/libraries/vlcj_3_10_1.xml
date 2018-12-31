@@ -1,0 +1,17 @@
+<component name="libraryTable">
+  <library name="vlcj-3.10.1">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/Documents/GithubRepo/Tutor-Point/Dependency/vlcj-3.10.1/vlcj-3.10.1.jar!/" />
+      <root url="jar://$USER_HOME$/Documents/GithubRepo/Tutor-Point/Dependency/vlcj-3.10.1/jna-4.1.0.jar!/" />
+      <root url="jar://$USER_HOME$/Documents/GithubRepo/Tutor-Point/Dependency/vlcj-3.10.1/jna-platform-4.1.0.jar!/" />
+      <root url="jar://$USER_HOME$/Documents/GithubRepo/Tutor-Point/Dependency/vlcj-3.10.1/vlcj-3.10.1-tests.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/Documents/GithubRepo/Tutor-Point/Dependency/vlcj-3.10.1/vlcj-3.10.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/Documents/GithubRepo/Tutor-Point/Dependency/vlcj-3.10.1/vlcj-3.10.1-sources.jar!/" />
+      <root url="jar://$USER_HOME$/Documents/GithubRepo/Tutor-Point/Dependency/vlcj-3.10.1/vlcj-3.10.1-test-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

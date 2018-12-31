@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="addVideoToChannelAnchorPane" prefHeight="656.0" prefWidth="986.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.UI.AddVideoController">
+    <children>
+        <AnchorPane fx:id="holderAnchorPane" layoutX="-1.0" layoutY="1.0" prefHeight="656.0" prefWidth="986.0">
+            <children>
+                <Label layoutX="74.0" layoutY="98.0" prefHeight="44.0" prefWidth="143.0" text="Select Channel:">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                    <effect>
+                        <Glow />
+                    </effect>
+                </Label>
+                <JFXButton fx:id="addVideoButton" buttonType="RAISED" layoutX="91.0" layoutY="407.0" onAction="#addVideoToChannel" prefHeight="26.0" prefWidth="160.0" ripplerFill="WHITE" style="-fx-border-radius: 5; -fx-background-color: b2b2b2;" text="Add Videos">
+                    <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                    </cursor>
+                </JFXButton>
+                <JFXButton fx:id="discardButton" buttonType="RAISED" layoutX="349.0" layoutY="407.0" onAction="#discard" prefHeight="26.0" prefWidth="160.0" ripplerFill="WHITE" style="-fx-border-radius: 5; -fx-background-color: b2b2b2;" text="Discard">
+                    <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                    </cursor>
+                </JFXButton>
+                <JFXButton fx:id="addVideosButton" buttonType="RAISED" layoutX="802.0" layoutY="120.0" onAction="#addVideos" prefHeight="26.0" prefWidth="123.0" style="-fx-border-radius: 5; -fx-background-color: b2b2b2;" text="Add Videos">
+                    <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                    </cursor>
+                </JFXButton>
+                <JFXTextArea fx:id="tagsTextArea" labelFloat="true" layoutX="35.0" layoutY="199.0" prefHeight="58.0" prefWidth="533.0" promptText="Enter Comma Delimited Tags for the selected video">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                </JFXTextArea>
+                <JFXButton fx:id="addTagsToVideoButton" buttonType="RAISED" layoutX="217.0" layoutY="282.0" onAction="#addTagsToVideo" prefHeight="26.0" prefWidth="143.0" style="-fx-border-radius: 5; -fx-background-color: b2b2b2;" text="Add Tags">
+                    <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                    </cursor>
+                </JFXButton>
+                <JFXListView fx:id="videoListView" depth="1" layoutX="749.0" layoutY="160.0" prefHeight="260.0" prefWidth="209.0" showTooltip="true" style="-fx-border-radius: 7;" verticalGap="10.0">
+                    <effect>
+                        <Glow />
+                    </effect>
+                    <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                    </cursor>
+                </JFXListView>
+                <ScrollPane fx:id="scrollPane" layoutX="19.0" layoutY="450.0" prefHeight="184.0" prefWidth="949.0">
+                    <effect>
+                        <Glow />
+                    </effect>
+                </ScrollPane>
+                <AnchorPane fx:id="loadingAnchorPane" layoutX="429.0" layoutY="228.0" prefHeight="171.0" prefWidth="227.0">
+                    <children>
+                        <Label alignment="CENTER" layoutX="3.0" layoutY="67.0" prefHeight="16.0" prefWidth="222.0" text="Adding Video">
+                            <font>
+                                <Font size="22.0" />
+                            </font>
+                            <effect>
+                                <DropShadow />
+                            </effect>
+                        </Label>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="32.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../Resuorces/loading-200px.gif" />
+                            </image>
+                        </ImageView>
+                    </children>
+                </AnchorPane>
+            <JFXComboBox fx:id="channelSelectComboBox" layoutX="217.0" layoutY="107.0" prefHeight="26.0" prefWidth="227.0" />
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

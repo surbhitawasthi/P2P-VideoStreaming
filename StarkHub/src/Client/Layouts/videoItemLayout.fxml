@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="193.0" prefWidth="243.0" style="-fx-border-radius: 10; -fx-background-radius: 10;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.UI.VideoItemController">
+   <children>
+      <ImageView fitHeight="149.0" fitWidth="230.0" layoutX="7.0" layoutY="7.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../../../../starkhub/thumbnails/Berklee.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="14.0" layoutY="159.0" prefHeight="30.0" prefWidth="219.0" text="Label">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect>
+      </Label>
+      <JFXButton fx:id="videoMainButton" buttonType="RAISED" layoutX="7.0" layoutY="7.0" onAction="#openVideo" prefHeight="180.0" prefWidth="230.0" text=" ">
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </JFXButton>
+      <ImageView fx:id="watchLaterImageView" fitHeight="30.0" fitWidth="40.0" layoutX="199.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Resuorces/watchlater-24.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="watchLaterButton" layoutX="198.0" layoutY="10.0" onAction="#addToWatchLater" prefHeight="37.0" prefWidth="37.0" text=" " />
+   </children>
+</AnchorPane>

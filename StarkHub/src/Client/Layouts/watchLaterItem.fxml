@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="166.0" prefWidth="855.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.UI.WatchLaterItemController">
+    <children>
+        <ImageView fitHeight="154.0" fitWidth="247.0" layoutX="7.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+         <effect>
+            <DropShadow />
+         </effect></ImageView>
+        <JFXButton alignment="CENTER" buttonType="RAISED" layoutX="261.0" layoutY="7.0" prefHeight="154.0" prefWidth="564.0" text="VideoName" textFill="#972424">
+            <font>
+                <Font size="19.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="CLOSED_HAND" />
+            </cursor></JFXButton>
+      <JFXButton layoutX="824.0" layoutY="63.0" prefHeight="34.0" prefWidth="31.0" text="X" />
+    </children>
+    <effect>
+        <DropShadow />
+    </effect>
+</AnchorPane>
