@@ -3,7 +3,7 @@ A java application based on peer to peer networking paradigm for video streaming
 
 The idea underlying this project is the restrictions that are being imposed by **Popular websites and content providers**, which todays modern minds think of as a possible threat towards the open-minded communities like ours.
 
-![We want neutrality](https://i.imgur.com/14ZNNZf.gifv)
+![We want neutrality](https://github.com/surbhitawasthi/P2P-VideoStreaming/blob/master/P2PHub/open-mind.gif)
 
 ## Few Features:
 
